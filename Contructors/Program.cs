@@ -7,12 +7,12 @@ namespace ClassesAndObjects // Note: actual namespace depends on the project nam
         static void Main(string[] args)
         {
 
-            //You can create more constructor on here with arugments or no arguments. 
+            //You can create more constructor on here with arguments or no arguments. 
 
             Book book1 = new Book("Harry Potter", "JK Rowling", 400); //this should mirror book.cs file on line 32
 
                                     //create an object which is an instance of the book class.
-                                    //I'm actually calling that constructor method on line 21 and line 32. These are directly link to this method Book() in Book.cs
+                                    //I'm actually calling that constructor method on line 23 and 35. These are directly link to this method Book() in Book.cs
                                     //So now it is going to call Mike and John because I'm calling that book contructor in Book.cs
                                     //Therefore not only does this call that constructor but from here, we can also pass parameters.
                                     //Next imageine we have to create 10-20 books and it would take a long time to go through and assign a title, a author, and a number of pages..etc
@@ -34,6 +34,11 @@ namespace ClassesAndObjects // Note: actual namespace depends on the project nam
             //so if you want, you can modify any of these values. 
             book2.title = "The Hobbit";
             Console.WriteLine(book2.title);
+
+            //example
+            Book book3 = new Book("Macbeth", "William Shakespeare", 150);
+            Console.WriteLine(book3.pages);
+
 
 
         }
